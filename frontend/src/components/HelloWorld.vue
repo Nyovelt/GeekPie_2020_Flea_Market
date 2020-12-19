@@ -17,78 +17,73 @@
           <div class="text-center">
             <v-btn
               class="ma-2"
-              :loading="loading"
-              :disabled="loading"
-              color="secondary"
-              @click="loader = 'loading'"
+              color="info"
+              v-on:click="btn1_onclick"
             >
               按钮1
             </v-btn>
-
             <v-btn
-              :loading="loading3"
-              :disabled="loading3"
-              color="blue-grey"
-              class="ma-2 white--text"
-              @click="loader = 'loading3'"
+              class="ma-2"
+              color="info"
+              v-on:click="btn2_onclick"
             >
               按钮2
             </v-btn>
-
             <v-btn
               class="ma-2"
-              :loading="loading2"
-              :disabled="loading2"
-              color="success"
-              @click="loader = 'loading2'"
+              color="info"
+              v-on:click="btn3_onclick"
             >
               按钮3
             </v-btn>
-
             <v-btn
               class="ma-2"
-              :loading="loading4"
-              :disabled="loading4"
               color="info"
-              @click="loader = 'loading4'"
+              v-on:click="btn4_onclick"
             >
               按钮4
+            </v-btn>
+            <v-btn
+              class="ma-2"
+              color="info"
+              v-on:click="btn5_onclick"
+            >
+              按钮5
             </v-btn>
           </div>
         </v-row>
 
                 <v-row justify="center">
           <div class="text-center">
-            <v-btn
+            
+               <v-btn
               class="ma-2"
-              :loading="loading"
-              :disabled="loading"
-              color="cyan"
-              @click="loader = 'loading'"
-            >
-              按钮5
-            </v-btn>
-
-            <v-btn
-              :loading="loading3"
-              :disabled="loading3"
-              color="teal"
-              class="ma-2 white--text"
-              @click="loader = 'loading3'"
+              color="info"
+              v-on:click="btn6_onclick"
             >
               按钮6
             </v-btn>
-
             <v-btn
               class="ma-2"
-              :loading="loading2"
-              :disabled="loading2"
-              color="primary"
-              @click="loader = 'loading2'"
+              color="info"
+              v-on:click="btn7_onclick"
             >
               按钮7
             </v-btn>
-
+            <v-btn
+              class="ma-2"
+              color="info"
+              v-on:click="btn8_onclick"
+            >
+              按钮8
+            </v-btn>
+            <v-btn
+              class="ma-2"
+              color="info"
+              v-on:click="btn9_onclick"
+            >
+              按钮9
+            </v-btn>
 
 
           </div>
@@ -100,7 +95,7 @@
 
         <v-row justify="center">
             
-            <v-btn depressed color="pink"> Continue </v-btn>
+            <v-btn depressed color="info" v-on:click="event0"> Continue </v-btn>
           
         </v-row>
       </v-col>
@@ -113,5 +108,37 @@ export default {
   name: "HelloWorld",
 
   data: () => ({}),
+  methods: {
+    btn1_onclick(){
+      alert("btn1");
+    },
+    btn2_onclick(){
+      alert("btn2");
+    },
+    btn3_onclick(){
+      alert("btn3");
+    },
+    btn4_onclick(){
+      alert("btn4");
+    },
+    btn5_onclick(){
+      alert("btn5");
+    },
+    btn6_onclick(){
+      alert("btn6");
+    },
+    btn7_onclick(){
+      alert("btn7");
+    },
+    btn8_onclick(){
+      alert("btn8");
+    },
+    btn9_onclick(){
+      alert("btn9");
+    },
+    event0(){
+      alert("event0");
+    }
+  }
 };
 </script>
